@@ -4,7 +4,7 @@ orbs:
 jobs:
     deploy:
         environment:
-            IMAGE_NAME: scaaz/CiCdWorkPlz4
+            IMAGE_NAME: scaaz/cicdworkplz
       
         docker:
             - image: circleci/buildpack-deps:stretch
