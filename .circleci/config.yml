@@ -12,13 +12,13 @@ jobs:
         - setup_remote_docker
         - run:
             name: Build Docker image
-            command: cd server && docker build -t $IMAGE_NAME: serverobraz 
+            command: cd server && docker build -t $IMAGE_NAME:serverobraz 
         - run:
             name: Publish Docker Image to Docker Hub
             command: | echo "$DOCKERHUB_PASS" | docker login -u "$DOCKERHUB_USERNAME" --password-stdin docker push $IMAGE_NAME:serverobraz
         - run:
             name: Build Docker image
-            command: cd client && docker build -t $IMAGE_NAME: clientobraz
+            command: cd client && docker build -t $IMAGE_NAME:clientobraz
         - run:
             name: Publish Docker Image to Docker Hub
             command: | echo "$DOCKERHUB_PASS" | docker login -u "$DOCKERHUB_USERNAME" --password-stdin docker push $IMAGE_NAME:clientobraz
