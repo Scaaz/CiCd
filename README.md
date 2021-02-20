@@ -1,5 +1,6 @@
-# ASK 2020 Nodejs-React app
-**Cel ćwiczenia:**
+# Czym jest ten projekt?
+Repozytorium to jest zadaniem na kurs Administracja Sieciami Komputerowymi.
+Polecenie tego zadania widoczne jest poniżej.
 
 ## Uruchomienie aplikacji
 Aplikacja składa się z trzech części:
